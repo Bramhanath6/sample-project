@@ -1,0 +1,5 @@
+List<Hotel__c> Records = [Select id ,name,(select name from Room__r) from Hotel__c];
+for(Hotel__c Record : Records){
+     system.debug(Records);
+
+}

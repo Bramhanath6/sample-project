@@ -5,6 +5,11 @@
 // You can also execute the entire file by running the command:
 //     SFDX: Execute Anonymous Apex with Editor Contents
 
-string tempvar = 'Enter_your_name_here';
-System.debug('Hello Bramha!!');
-System.debug('My name is ' + tempvar);
+List<Lead> records = [SELECT count(id),LeadSource FROM Lead
+        Where LeadSource !=null
+        group by LeadSource
+        having count(id)>3];
+for(Lead LeadRecords : records){
+    system.debug(LeadRecords);
+}  
+ 

@@ -8,5 +8,5 @@
         console.log('Came into sayHello');
         const name = cmp.find("nameInputId").get("v.value"); //Get input text field value
         cmp.set("v.person", name); //Set the component attribute value
-    } 
+    }
 })

@@ -1,3 +1,3 @@
 <aura:application extends="force:slds">
-    <c:ContactsAuraComonent />
+    <c:ContactsAuraComp />
 </aura:application>	

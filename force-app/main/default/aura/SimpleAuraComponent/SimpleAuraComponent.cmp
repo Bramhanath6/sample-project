@@ -8,4 +8,4 @@
     <br/>
     <lightning:button variant="brand" label="Say Hello" 
             title="Say Hello Title" onclick="{! c.sayHello }" />
-</aura:component>	
+</aura:component>
